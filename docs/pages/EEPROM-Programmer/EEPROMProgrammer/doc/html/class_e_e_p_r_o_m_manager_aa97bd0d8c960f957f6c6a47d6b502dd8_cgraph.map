@@ -1,0 +1,9 @@
+<map id="EEPROMManager::readSegment" name="EEPROMManager::readSegment">
+<area shape="rect" id="node1" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="5,148,220,175"/>
+<area shape="rect" id="node2" href="$class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo più elegante e semplice da interpret..." alt="" coords="283,5,456,32"/>
+<area shape="rect" id="node3" href="$class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo più elegante e semplice da interpret..." alt="" coords="268,57,471,98"/>
+<area shape="rect" id="node4" href="$class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb" title="Effettua il campionamento dei dati in output dal chip." alt="" coords="280,123,459,149"/>
+<area shape="rect" id="node5" href="$class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="268,173,471,200"/>
+<area shape="rect" id="node6" href="$class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="272,224,467,251"/>
+<area shape="rect" id="node7" href="$class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="272,275,467,317"/>
+</map>

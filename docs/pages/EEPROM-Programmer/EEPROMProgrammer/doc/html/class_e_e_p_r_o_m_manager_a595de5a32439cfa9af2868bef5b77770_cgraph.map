@@ -1,0 +1,8 @@
+<map id="EEPROMManager::readAddress" name="EEPROMManager::readAddress">
+<area shape="rect" id="node1" title="Effettua la lettura di un singolo indirizzo di memoria." alt="" coords="5,122,216,149"/>
+<area shape="rect" id="node2" href="$class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo più elegante e semplice da interpret..." alt="" coords="264,5,467,47"/>
+<area shape="rect" id="node3" href="$class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb" title="Effettua il campionamento dei dati in output dal chip." alt="" coords="276,71,455,98"/>
+<area shape="rect" id="node4" href="$class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="264,122,467,149"/>
+<area shape="rect" id="node5" href="$class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="268,173,463,199"/>
+<area shape="rect" id="node6" href="$class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="268,224,463,265"/>
+</map>

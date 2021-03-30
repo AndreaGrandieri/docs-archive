@@ -1,0 +1,7 @@
+<map id="EEPROMManager::hardClear" name="EEPROMManager::hardClear">
+<area shape="rect" id="node1" title="Effettua la formattazione della memoria del chip." alt="" coords="5,81,197,108"/>
+<area shape="rect" id="node2" href="$class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO." alt="" coords="281,5,436,32"/>
+<area shape="rect" id="node3" href="$class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="257,56,460,83"/>
+<area shape="rect" id="node4" href="$class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="261,107,456,133"/>
+<area shape="rect" id="node5" href="$class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="245,157,472,184"/>
+</map>

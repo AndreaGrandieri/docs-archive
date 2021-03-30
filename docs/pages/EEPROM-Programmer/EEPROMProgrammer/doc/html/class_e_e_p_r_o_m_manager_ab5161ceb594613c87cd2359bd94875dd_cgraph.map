@@ -1,0 +1,9 @@
+<map id="EEPROMManager::writeAssistive" name="EEPROMManager::writeAssistive">
+<area shape="rect" id="node1" title="Effettua la scrittura della sequenza di byte specificata nella memoria del chip." alt="" coords="5,107,221,133"/>
+<area shape="rect" id="node2" href="$class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="269,107,481,133"/>
+<area shape="rect" id="node3" href="$class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="542,5,743,32"/>
+<area shape="rect" id="node4" href="$class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO." alt="" coords="565,56,720,83"/>
+<area shape="rect" id="node5" href="$class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="541,107,744,133"/>
+<area shape="rect" id="node6" href="$class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="545,157,740,184"/>
+<area shape="rect" id="node7" href="$class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="529,208,756,235"/>
+</map>

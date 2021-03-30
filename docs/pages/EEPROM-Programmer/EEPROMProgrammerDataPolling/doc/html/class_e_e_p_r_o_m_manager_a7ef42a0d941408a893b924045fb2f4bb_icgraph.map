@@ -1,0 +1,6 @@
+<map id="EEPROMManager::sample" name="EEPROMManager::sample">
+<area shape="rect" id="node1" title="Effettua il campionamento dei dati in output dal chip." alt="" coords="493,31,672,57"/>
+<area shape="rect" id="node2" href="$class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria." alt="" coords="233,5,443,32"/>
+<area shape="rect" id="node3" href="$class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="231,56,445,83"/>
+<area shape="rect" id="node4" href="$class_e_e_p_r_o_m_manager.html#a148019e3414b8e81a6dd33386c049f29" title="Effettua la lettura dell&#39;intera memoria del chip." alt="" coords="5,56,183,83"/>
+</map>

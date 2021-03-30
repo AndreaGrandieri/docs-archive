@@ -1,0 +1,5 @@
+<map id="EEPROMManager::writeSegment" name="EEPROMManager::writeSegment">
+<area shape="rect" id="node1" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="445,5,661,32"/>
+<area shape="rect" id="node2" href="$class_e_e_p_r_o_m_manager.html#a0d1413187f2761faef59a9fe09ebf4c6" title="Effettua la scrittura dell&#39;intera memoria del chip." alt="" coords="219,5,397,32"/>
+<area shape="rect" id="node3" href="$class_e_e_p_r_o_m_manager.html#a23ddca0bf363d06f2546bc090ece2067" title="Effettua la formattazione della memoria del chip." alt="" coords="5,5,171,32"/>
+</map>

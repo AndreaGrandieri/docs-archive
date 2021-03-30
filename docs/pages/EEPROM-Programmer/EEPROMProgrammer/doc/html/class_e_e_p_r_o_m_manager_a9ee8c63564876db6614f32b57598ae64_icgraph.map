@@ -1,0 +1,12 @@
+<map id="EEPROMManager::setAddress" name="EEPROMManager::setAddress">
+<area shape="rect" id="node1" title="Seleziona l&#39;indirizzo specificato." alt="" coords="747,107,949,133"/>
+<area shape="rect" id="node2" href="$class_e_e_p_r_o_m_manager.html#adfdb0fece69f1722b6fe85e6b0562bde" title="Effettua la formattazione della memoria del chip." alt="" coords="495,5,687,32"/>
+<area shape="rect" id="node3" href="$class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria." alt="" coords="485,56,696,83"/>
+<area shape="rect" id="node4" href="$class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="483,107,698,133"/>
+<area shape="rect" id="node6" href="$class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="485,157,697,184"/>
+<area shape="rect" id="node8" href="$class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="483,208,699,235"/>
+<area shape="rect" id="node5" href="$class_e_e_p_r_o_m_manager.html#a148019e3414b8e81a6dd33386c049f29" title="Effettua la lettura dell&#39;intera memoria del chip." alt="" coords="238,107,415,133"/>
+<area shape="rect" id="node7" href="$class_e_e_p_r_o_m_manager.html#ab5161ceb594613c87cd2359bd94875dd" title="Effettua la scrittura della sequenza di byte specificata nella memoria del chip." alt="" coords="219,157,435,184"/>
+<area shape="rect" id="node9" href="$class_e_e_p_r_o_m_manager.html#a0d1413187f2761faef59a9fe09ebf4c6" title="Effettua la scrittura dell&#39;intera memoria del chip." alt="" coords="237,208,416,235"/>
+<area shape="rect" id="node10" href="$class_e_e_p_r_o_m_manager.html#a23ddca0bf363d06f2546bc090ece2067" title="Effettua la formattazione della memoria del chip." alt="" coords="5,208,171,235"/>
+</map>
