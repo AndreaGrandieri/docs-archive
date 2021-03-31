@@ -77,7 +77,7 @@ $(function() {
 <p>Classe per la gestione di un chip EEPROM.  
  <a href="class_e_e_p_r_o_m_manager.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for EEPROMManager:</div>
 <div class="dyncontent">
@@ -98,17 +98,17 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476a5fb1f955b45e38e31789286a1790398d">ReadMode::ALL</a>
 <br />
  }</td></tr>
-<tr class="memdesc:affa6ca02f4fc18d26f9ff4e03fb7e476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerazione rappresentante le diverse modalit√† di interpretazione dei dati letti.  <a href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476">More...</a><br /></td></tr>
+<tr class="memdesc:affa6ca02f4fc18d26f9ff4e03fb7e476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerazione rappresentante le diverse modalit‡ di interpretazione dei dati letti.  <a href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476">More...</a><br /></td></tr>
 <tr class="separator:affa6ca02f4fc18d26f9ff4e03fb7e476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa093893e9f801aa32df23f728b5c50bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf">DataIOState</a> { <a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bfa1d89028fe6cc2e362504d2a31aac86ae">DataIOState::_INPUT</a>, 
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bfaecc90c7b155d0201999feb7af9ab891e">DataIOState::_OUTPUT</a>
  }</td></tr>
-<tr class="memdesc:aa093893e9f801aa32df23f728b5c50bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerazione rappresentante le diverse modalit√† di funzionamento attribuibili ai pin IO.  <a href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf">More...</a><br /></td></tr>
+<tr class="memdesc:aa093893e9f801aa32df23f728b5c50bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerazione rappresentante le diverse modalit‡ di funzionamento attribuibili ai pin IO.  <a href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf">More...</a><br /></td></tr>
 <tr class="separator:aa093893e9f801aa32df23f728b5c50bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6d23a3d51d600b159b942d8703c15a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#aef6d23a3d51d600b159b942d8703c15a">ClearMode</a> { <a class="el" href="class_e_e_p_r_o_m_manager.html#aef6d23a3d51d600b159b942d8703c15aaca25c85ba6a216c41500a41e220a1f29">ClearMode::LOWEST_VALUE_FILL</a>, 
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aef6d23a3d51d600b159b942d8703c15aa588786b014ebeb380f8de79dc9e1e85e">ClearMode::HIGHEST_VALUE_FILL</a>
  }</td></tr>
-<tr class="memdesc:aef6d23a3d51d600b159b942d8703c15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerazione rappresentante le diverse modalit√† di formattazione della memoria del chip.  <a href="class_e_e_p_r_o_m_manager.html#aef6d23a3d51d600b159b942d8703c15a">More...</a><br /></td></tr>
+<tr class="memdesc:aef6d23a3d51d600b159b942d8703c15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerazione rappresentante le diverse modalit‡ di formattazione della memoria del chip.  <a href="class_e_e_p_r_o_m_manager.html#aef6d23a3d51d600b159b942d8703c15a">More...</a><br /></td></tr>
 <tr class="separator:aef6d23a3d51d600b159b942d8703c15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -157,7 +157,7 @@ Private Types</h2></td></tr>
 <tr class="memitem:aefdf301a33bb92088574ec60cbea77ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee">ResultStringBuilderSpecification</a> { <a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77eea169472dc7d0f2cba83924ee6c184528f">ResultStringBuilderSpecification::INCLUDE_HEADER_INFO</a>, 
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77eea736d84ab5ad31dbe44a199ded2dc8518">ResultStringBuilderSpecification::NOT_INCLUDE_HEADER_INFO</a>
  }</td></tr>
-<tr class="memdesc:aefdf301a33bb92088574ec60cbea77ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerazione rappresentante le diverse modalit√† di formattazione dell'output.  <a href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee">More...</a><br /></td></tr>
+<tr class="memdesc:aefdf301a33bb92088574ec60cbea77ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerazione rappresentante le diverse modalit‡ di formattazione dell'output.  <a href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee">More...</a><br /></td></tr>
 <tr class="separator:aefdf301a33bb92088574ec60cbea77ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc5187d41e25c25d4e3cbdc312adb285"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#adc5187d41e25c25d4e3cbdc312adb285">FormatTarget</a> { <a class="el" href="class_e_e_p_r_o_m_manager.html#adc5187d41e25c25d4e3cbdc312adb285a7ad4905b4543ab4a1637dd23c50e36ce">FormatTarget::HEADER</a>, 
 <a class="el" href="class_e_e_p_r_o_m_manager.html#adc5187d41e25c25d4e3cbdc312adb285abba4002db78141aef015d0d10af5a410">FormatTarget::NOT_HEADER</a>
@@ -182,18 +182,21 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7ef42a0d941408a893b924045fb2f4bb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb">sample</a> ()</td></tr>
 <tr class="memdesc:a7ef42a0d941408a893b924045fb2f4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effettua il campionamento dei dati in output dal chip.  <a href="class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb">More...</a><br /></td></tr>
 <tr class="separator:a7ef42a0d941408a893b924045fb2f4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f69a71d695d931a6959b23a8ec2fbc0"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0">sampleLowLevel</a> ()</td></tr>
+<tr class="memdesc:a7f69a71d695d931a6959b23a8ec2fbc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effettua il campionamento low level dei dati in output dal chip.  <a href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0">More...</a><br /></td></tr>
+<tr class="separator:a7f69a71d695d931a6959b23a8ec2fbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381ae932693fc82dd81116a72f858100"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100">resultStringBuilder</a> (const int &amp;address, const double &amp;sampleResult, const <a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476">EEPROMManager::ReadMode</a> &amp;mode, const <a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee">EEPROMManager::ResultStringBuilderSpecification</a> &amp;specification)</td></tr>
-<tr class="memdesc:a381ae932693fc82dd81116a72f858100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpretare e permette di effettuare la conversione dei dati da visualizzare in basi differenti.  <a href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100">More...</a><br /></td></tr>
+<tr class="memdesc:a381ae932693fc82dd81116a72f858100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare e permette di effettuare la conversione dei dati da visualizzare in basi differenti.  <a href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100">More...</a><br /></td></tr>
 <tr class="separator:a381ae932693fc82dd81116a72f858100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3df1810c43b78b2e76a85660605686fc"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc">format</a> (const int &amp;value, const <a class="el" href="class_e_e_p_r_o_m_manager.html#adc5187d41e25c25d4e3cbdc312adb285">EEPROMManager::FormatTarget</a> &amp;target)</td></tr>
-<tr class="memdesc:a3df1810c43b78b2e76a85660605686fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpretare.  <a href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc">More...</a><br /></td></tr>
+<tr class="memdesc:a3df1810c43b78b2e76a85660605686fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare.  <a href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc">More...</a><br /></td></tr>
 <tr class="separator:a3df1810c43b78b2e76a85660605686fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c8f18767067d27e3e90256b8070a4ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac">put</a> (int data)</td></tr>
 <tr class="memdesc:a2c8f18767067d27e3e90256b8070a4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imposta il valore specificato sui pin IO.  <a href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac">More...</a><br /></td></tr>
 <tr class="separator:a2c8f18767067d27e3e90256b8070a4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d2076266a99cc5f6cd94f6fcca660d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7">isReadonly</a> (const int &amp;address)</td></tr>
-<tr class="memdesc:a8d2076266a99cc5f6cd94f6fcca660d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controlla se l'indirizzo base specificato si riferisce ad un segmento readonly.  <a href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7">More...</a><br /></td></tr>
-<tr class="separator:a8d2076266a99cc5f6cd94f6fcca660d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2cd13eefe1042c752c88722487c9189"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189">isReadonly</a> (const int &amp;baseAddress)</td></tr>
+<tr class="memdesc:ac2cd13eefe1042c752c88722487c9189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controlla se l'indirizzo base specificato si riferisce ad un segmento readonly.  <a href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189">More...</a><br /></td></tr>
+<tr class="separator:ac2cd13eefe1042c752c88722487c9189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -218,8 +221,6 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:af3df05e28b30d46c6f8d831c07f1980c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44dcf486880e00e173ae23dbf98479a3"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a44dcf486880e00e173ae23dbf98479a3">TIME_HOLD_WRITE_SIGNAL</a> = 1</td></tr>
 <tr class="separator:a44dcf486880e00e173ae23dbf98479a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b075a3576619653d12c97cea818799"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a97b075a3576619653d12c97cea818799">TIME_WRITE</a> = 1</td></tr>
-<tr class="separator:a97b075a3576619653d12c97cea818799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b0be694d212b14de6855b6de485e81b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a7b0be694d212b14de6855b6de485e81b">TIME_RECOVERY_FROM_WRITE</a> = 0</td></tr>
 <tr class="separator:a7b0be694d212b14de6855b6de485e81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ce6242b901f44feeb36c257bbefdc2"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_e_p_r_o_m_manager.html#a58ce6242b901f44feeb36c257bbefdc2">IMPRECISION</a> = 200</td></tr>
@@ -256,7 +257,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Grandieri Andrea <a href="#" onclick="location.href='mai'+'lto:'+'g.a'+'nd'+'reu'+'s0'+'2@g'+'ma'+'il.'+'co'+'m'; return false;">g.and<span style="display: none;">.nosp@m.</span>reus<span style="display: none;">.nosp@m.</span>02@gm<span style="display: none;">.nosp@m.</span>ail.<span style="display: none;">.nosp@m.</span>com</a></dd></dl>
 <p>La seguente classe fornisce tutti i metodi necessari alla realizzazione di un ambiente operativo per la gestione di un chip EEPROM. </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00039">39</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00070">70</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aef6d23a3d51d600b159b942d8703c15a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef6d23a3d51d600b159b942d8703c15a">&#9670;&nbsp;</a></span>ClearMode</h2>
@@ -278,7 +279,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enumerazione rappresentante le diverse modalit√† di formattazione della memoria del chip. </p>
+<p>Enumerazione rappresentante le diverse modalit‡ di formattazione della memoria del chip. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a23ddca0bf363d06f2546bc090ece2067" title="Effettua la formattazione della memoria del chip.">EEPROMManager::clear()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#adfdb0fece69f1722b6fe85e6b0562bde" title="Effettua la formattazione della memoria del chip.">EEPROMManager::hardClear()</a> </dd></dl>
@@ -287,7 +288,7 @@ Static Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="aef6d23a3d51d600b159b942d8703c15aa588786b014ebeb380f8de79dc9e1e85e"></a>HIGHEST_VALUE_FILL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00311">311</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00333">333</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -311,14 +312,14 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enumerazione rappresentante le diverse modalit√† di funzionamento attribuibili ai pin IO. </p>
+<p>Enumerazione rappresentante le diverse modalit‡ di funzionamento attribuibili ai pin IO. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a3765e7d80716eec86e8dc21fffb93b61">EEPROMManager::dataIO</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa093893e9f801aa32df23f728b5c50bfa1d89028fe6cc2e362504d2a31aac86ae"></a>_INPUT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa093893e9f801aa32df23f728b5c50bfaecc90c7b155d0201999feb7af9ab891e"></a>_OUTPUT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00295">295</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00317">317</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -343,13 +344,13 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enumerazione rappresentante i diversi target interessati dalla formattazione dell'output. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret...">EEPROMManager::format()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare.">EEPROMManager::format()</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adc5187d41e25c25d4e3cbdc312adb285a7ad4905b4543ab4a1637dd23c50e36ce"></a>HEADER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adc5187d41e25c25d4e3cbdc312adb285abba4002db78141aef015d0d10af5a410"></a>NOT_HEADER&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00342">342</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00364">364</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -373,10 +374,10 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enumerazione rappresentante le diverse modalit√† di interpretazione dei dati letti. </p>
+<p>Enumerazione rappresentante le diverse modalit‡ di interpretazione dei dati letti. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria.">EEPROMManager::readAddress()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret...">EEPROMManager::resultStringBuilder()</a> </dd></dl>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare ...">EEPROMManager::resultStringBuilder()</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="affa6ca02f4fc18d26f9ff4e03fb7e476a33c08bf0705a42cbb818c6003d5872e4"></a>_DEC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="affa6ca02f4fc18d26f9ff4e03fb7e476a56886f12cba476e8c0fa9eb7671f78e4"></a>_HEX&#160;</td><td class="fielddoc"></td></tr>
@@ -385,7 +386,7 @@ Static Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="affa6ca02f4fc18d26f9ff4e03fb7e476a5fb1f955b45e38e31789286a1790398d"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00275">275</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00297">297</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -409,14 +410,14 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enumerazione rappresentante le diverse modalit√† di formattazione dell'output. </p>
+<p>Enumerazione rappresentante le diverse modalit‡ di formattazione dell'output. </p>
 <dl class="section see"><dt>See also</dt><dd>EEPROMMangaer::resultStringBuilder() </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aefdf301a33bb92088574ec60cbea77eea169472dc7d0f2cba83924ee6c184528f"></a>INCLUDE_HEADER_INFO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aefdf301a33bb92088574ec60cbea77eea736d84ab5ad31dbe44a199ded2dc8518"></a>NOT_INCLUDE_HEADER_INFO&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00326">326</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00348">348</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +631,7 @@ Static Private Attributes</h2></td></tr>
 <dd>
 EEPROMManager::LIST_READONLY_SEGMENTS </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00003">3</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00003">3</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 
 </div>
 </div>
@@ -657,7 +658,7 @@ EEPROMManager::LIST_READONLY_SEGMENTS </dd></dl>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a5bb3e649470bdec81bc8b87591eb4206">EEPROMManager::readonlySegments</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00020">20</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00020">20</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 
 </div>
 </div>
@@ -682,32 +683,34 @@ EEPROMManager::LIST_READONLY_SEGMENTS </dd></dl>
 <p>Il seguente metodo effettua la formattazione della memoria del chip, causando la perdita di tutte le informazioni in esso contenute</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>La modalit√† di formattazione della memoria del chip</td></tr>
+    <tr><td class="paramname">mode</td><td>La modalit‡ di formattazione della memoria del chip</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd>Il processo di formattazione "clear" causa la perdita di tutte le informazioni contenute nella memoria del chip, eccetto per i segmenti readonly</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#ac9684363ad84b018ab85121e2f94b6d3">EEPROMManager::hasBeenInit</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a0d1413187f2761faef59a9fe09ebf4c6" title="Effettua la scrittura dell&#39;intera memoria del chip.">EEPROMManager::writeAll()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aef6d23a3d51d600b159b942d8703c15a" title="Enumerazione rappresentante le diverse modalit√† di formattazione della memoria del chip.">EEPROMManager::ClearMode</a> </dd></dl>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aef6d23a3d51d600b159b942d8703c15a" title="Enumerazione rappresentante le diverse modalit‡ di formattazione della memoria del chip.">EEPROMManager::ClearMode</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00419">419</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00495">495</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_a23ddca0bf363d06f2546bc090ece2067_cgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_a23ddca0bf363d06f2546bc090ece2067_cgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_a23ddca0bf363d06f2546bc090ece2067_cgraph" id="class_e_e_p_r_o_m_manager_a23ddca0bf363d06f2546bc090ece2067_cgraph">
-<area shape="rect" title="Effettua la formattazione della memoria del chip." alt="" coords="5,107,171,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a0d1413187f2761faef59a9fe09ebf4c6" title="Effettua la scrittura dell&#39;intera memoria del chip." alt="" coords="219,107,397,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="445,107,661,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="722,5,923,32"/>
+<area shape="rect" title="Effettua la formattazione della memoria del chip." alt="" coords="5,173,171,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a0d1413187f2761faef59a9fe09ebf4c6" title="Effettua la scrittura dell&#39;intera memoria del chip." alt="" coords="219,173,397,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="445,173,661,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="722,5,923,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO." alt="" coords="745,56,900,83"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="721,107,924,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="725,157,920,184"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="709,208,936,235"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip." alt="" coords="721,107,924,149"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="721,173,924,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="725,224,920,251"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="725,275,920,317"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="709,341,936,368"/>
 </map>
 </div>
 
@@ -747,8 +750,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpretare. </p>
-<p>Il seguente metodo formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpretare. Viene utilizzata la tecnica del padding, la quale consiste nell'aggiunta di "un
+<p>Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare. </p>
+<p>Il seguente metodo formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare. Viene utilizzata la tecnica del padding, la quale consiste nell'aggiunta di "un
 numero variabile di zeri" davanti ad altri valori numerici per ottenere un incolonnamento "perfetto".</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -763,13 +766,13 @@ numero variabile di zeri" davanti ad altri valori numerici per ottenere un incol
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a506cba0eee0824b11dba967fc7d56d89">EEPROMManager::PADDING_CHECK_TWO</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00662">662</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00786">786</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_a3df1810c43b78b2e76a85660605686fc_icgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_a3df1810c43b78b2e76a85660605686fc_icgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_a3df1810c43b78b2e76a85660605686fc_icgraph" id="class_e_e_p_r_o_m_manager_a3df1810c43b78b2e76a85660605686fc_icgraph">
-<area shape="rect" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret..." alt="" coords="493,5,667,32"/>
+<area shape="rect" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare." alt="" coords="493,5,667,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="231,5,445,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a148019e3414b8e81a6dd33386c049f29" title="Effettua la lettura dell&#39;intera memoria del chip." alt="" coords="5,5,183,32"/>
 </map>
@@ -797,12 +800,12 @@ Here is the caller graph for this function:</div>
 <p>Il seguente metodo effettua la formattazione della memoria del chip, causando la perdita di tutte le informazioni in esso contenute</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>La modalit√† di formattazione della memoria del chip</td></tr>
+    <tr><td class="paramname">mode</td><td>La modalit‡ di formattazione della memoria del chip</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd>Il processo di formattazione "hardClear" causa la perdita di tutte le informazioni contenute nella memoria del chip, compresi i i segmenti readonly</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#ac9684363ad84b018ab85121e2f94b6d3">EEPROMManager::hasBeenInit</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a12f317646760f6016bbff761c7084ca3">EEPROMManager::HIGHEST_ADDRESS</a> </dd>
@@ -811,43 +814,51 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore.">EEPROMManager::setDataIO()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit√† di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit‡ di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit√† di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit‡ di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato.">EEPROMManager::setAddress()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip.">EEPROMManager::setWriteEnable()</a> </dd>
 <dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#ad80b086ebac004e97395438fe8f74672">EEPROMManager::TIME_WAIT_READ</a> </dd>
+<dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a58ce6242b901f44feeb36c257bbefdc2">EEPROMManager::IMPRECISION</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO.">EEPROMManager::put()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#af3df05e28b30d46c6f8d831c07f1980c">EEPROMManager::TIME_RECOVERY_FROM_READ</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a0e43ea279fa5b58d79deba7d4fe62e16">EEPROMManager::LOWEST_VALID_DATA_VALUE</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a83421cdd18eb39598af0ddaa57775a01">EEPROMManager::HIGHEST_VALID_DATA_VALUE</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly.">EEPROMManager::isReadonly()</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly.">EEPROMManager::isReadonly()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a44dcf486880e00e173ae23dbf98479a3">EEPROMManager::TIME_HOLD_WRITE_SIGNAL</a> </dd>
 <dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip.">EEPROMManager::setOutputEnable()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip.">EEPROMManager::sampleLowLevel()</a> </dd>
+<dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a7b0be694d212b14de6855b6de485e81b">EEPROMManager::TIME_RECOVERY_FROM_WRITE</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#ab1713885200ce0df7e44727bf28536ac">EEPROMManager::SEGMENT_DEPTH</a> </dd>
-<dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a97b075a3576619653d12c97cea818799">EEPROMManager::TIME_WRITE</a> </dd></dl>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#ab1713885200ce0df7e44727bf28536ac">EEPROMManager::SEGMENT_DEPTH</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00448">448</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00524">524</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_adfdb0fece69f1722b6fe85e6b0562bde_cgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_adfdb0fece69f1722b6fe85e6b0562bde_cgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_adfdb0fece69f1722b6fe85e6b0562bde_cgraph" id="class_e_e_p_r_o_m_manager_adfdb0fece69f1722b6fe85e6b0562bde_cgraph">
-<area shape="rect" title="Effettua la formattazione della memoria del chip." alt="" coords="5,81,197,108"/>
+<area shape="rect" title="Effettua la formattazione della memoria del chip." alt="" coords="5,148,197,175"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO." alt="" coords="281,5,436,32"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="257,56,460,83"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="261,107,456,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="245,157,472,184"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip." alt="" coords="257,57,460,98"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="257,123,460,149"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="261,173,456,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="261,225,456,266"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="245,291,472,317"/>
 </map>
 </div>
 
@@ -884,7 +895,7 @@ Here is the call graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a8c43db4ba4e547fefa6382b95761342a">EEPROMManager::addresses</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00027">27</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00027">27</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -898,8 +909,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a8d2076266a99cc5f6cd94f6fcca660d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d2076266a99cc5f6cd94f6fcca660d7">&#9670;&nbsp;</a></span>isReadonly()</h2>
+<a id="ac2cd13eefe1042c752c88722487c9189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2cd13eefe1042c752c88722487c9189">&#9670;&nbsp;</a></span>isReadonly()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -911,7 +922,7 @@ Here is the call graph for this function:</div>
           <td class="memname">bool EEPROMManager::isReadonly </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>address</em></td><td>)</td>
+          <td class="paramname"><em>baseAddress</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -942,12 +953,12 @@ Here is the call graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria.">EEPROMManager::writeSegment()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00716">716</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00840">840</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_e_e_p_r_o_m_manager_a8d2076266a99cc5f6cd94f6fcca660d7_icgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_a8d2076266a99cc5f6cd94f6fcca660d7_icgraph" alt=""/></div>
-<map name="class_e_e_p_r_o_m_manager_a8d2076266a99cc5f6cd94f6fcca660d7_icgraph" id="class_e_e_p_r_o_m_manager_a8d2076266a99cc5f6cd94f6fcca660d7_icgraph">
+<div class="center"><img src="class_e_e_p_r_o_m_manager_ac2cd13eefe1042c752c88722487c9189_icgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_ac2cd13eefe1042c752c88722487c9189_icgraph" alt=""/></div>
+<map name="class_e_e_p_r_o_m_manager_ac2cd13eefe1042c752c88722487c9189_icgraph" id="class_e_e_p_r_o_m_manager_ac2cd13eefe1042c752c88722487c9189_icgraph">
 <area shape="rect" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="747,31,948,57"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="485,5,697,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="483,56,699,83"/>
@@ -984,7 +995,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Imposta il valore specificato sui pin IO. </p>
-<p>Il seguente metodo imposta il valore specificato sui pin IO, scomponendolo nei singoli bit da cui √® composto e assegnando ciascuno di essi ad un rispettivo pin IO (rispettando la sequenza MSB - LSB). Dunque, ogni singolo bit avr√† il proprio bus e il proprio pin IO.</p>
+<p>Il seguente metodo imposta il valore specificato sui pin IO, scomponendolo nei singoli bit da cui Ë composto e assegnando ciascuno di essi ad un rispettivo pin IO (rispettando la sequenza MSB - LSB). Dunque, ogni singolo bit avr‡ il proprio bus e il proprio pin IO.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>Il valore da impostare</td></tr>
@@ -1001,7 +1012,7 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#adfdb0fece69f1722b6fe85e6b0562bde" title="Effettua la formattazione della memoria del chip.">EEPROMManager::hardClear()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00699">699</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00823">823</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1047,11 +1058,11 @@ Here is the caller graph for this function:</div>
 
 <p>Effettua la lettura di un singolo indirizzo di memoria. </p>
 <p>Il seguente metodo effettua la lettura di un singolo indirizzo di memoria e stampa il risultato utilizzando l'output standard.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>L'indirizzo di memoria da leggere </td></tr>
-    <tr><td class="paramname">mode</td><td>La modalit√† di interpretazione dei dati letti</td></tr>
+    <tr><td class="paramname">mode</td><td>La modalit‡ di interpretazione dei dati letti</td></tr>
   </table>
   </dd>
 </dl>
@@ -1063,9 +1074,9 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore.">EEPROMManager::setDataIO()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit√† di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit‡ di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit√† di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit‡ di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato.">EEPROMManager::setAddress()</a> </dd>
 <dd>
@@ -1077,20 +1088,20 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb" title="Effettua il campionamento dei dati in output dal chip.">EEPROMManager::sample()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret...">EEPROMManager::resultStringBuilder()</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare ...">EEPROMManager::resultStringBuilder()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee" title="Enumerazione rappresentante le diverse modalit√† di formattazione dell&#39;output.">EEPROMManager::ResultStringBuilderSpecification</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee" title="Enumerazione rappresentante le diverse modalit‡ di formattazione dell&#39;output.">EEPROMManager::ResultStringBuilderSpecification</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#af3df05e28b30d46c6f8d831c07f1980c">EEPROMManager::TIME_RECOVERY_FROM_READ</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00061">61</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00061">61</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_a595de5a32439cfa9af2868bef5b77770_cgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_a595de5a32439cfa9af2868bef5b77770_cgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_a595de5a32439cfa9af2868bef5b77770_cgraph" id="class_e_e_p_r_o_m_manager_a595de5a32439cfa9af2868bef5b77770_cgraph">
 <area shape="rect" title="Effettua la lettura di un singolo indirizzo di memoria." alt="" coords="5,122,216,149"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret..." alt="" coords="264,5,467,47"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare ..." alt="" coords="264,5,467,47"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb" title="Effettua il campionamento dei dati in output dal chip." alt="" coords="276,71,455,98"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="264,122,467,149"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="268,173,463,199"/>
@@ -1117,7 +1128,7 @@ Here is the call graph for this function:</div>
 
 <p>Effettua la lettura dell'intera memoria del chip. </p>
 <p>Il seguente metodo effettua la lettura dell'intera memoria del chip e stampa il risultato utilizzando l'output standard.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#ac9684363ad84b018ab85121e2f94b6d3">EEPROMManager::hasBeenInit</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a63651366121e66e5ed3c8858f203d797">EEPROMManager::ADDRESSES</a> </dd>
@@ -1128,7 +1139,7 @@ Here is the call graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria.">EEPROMManager::readSegment()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00183">183</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00183">183</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1136,8 +1147,8 @@ Here is the call graph for this function:</div>
 <map name="class_e_e_p_r_o_m_manager_a148019e3414b8e81a6dd33386c049f29_cgraph" id="class_e_e_p_r_o_m_manager_a148019e3414b8e81a6dd33386c049f29_cgraph">
 <area shape="rect" title="Effettua la lettura dell&#39;intera memoria del chip." alt="" coords="5,148,183,175"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="231,148,445,175"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret..." alt="" coords="508,5,681,32"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret..." alt="" coords="493,57,696,98"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare." alt="" coords="508,5,681,32"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare ..." alt="" coords="493,57,696,98"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb" title="Effettua il campionamento dei dati in output dal chip." alt="" coords="505,123,684,149"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="493,173,696,200"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="497,224,692,251"/>
@@ -1165,7 +1176,7 @@ Here is the call graph for this function:</div>
 
 <p>Effettua la lettura di un intero segmento di memoria. </p>
 <p>Il seguente metodo effettua la lettura di un intero segmento di memoria e stampa il risultato utilizzando l'output standard.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">baseAddress</td><td>L'indirizzo base del segmento di memoria da leggere</td></tr>
@@ -1180,9 +1191,9 @@ Here is the call graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore.">EEPROMManager::setDataIO()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit√† di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit‡ di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit√† di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit‡ di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato.">EEPROMManager::setAddress()</a> </dd>
 <dd>
@@ -1194,27 +1205,27 @@ Here is the call graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb" title="Effettua il campionamento dei dati in output dal chip.">EEPROMManager::sample()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret...">EEPROMManager::resultStringBuilder()</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare ...">EEPROMManager::resultStringBuilder()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee" title="Enumerazione rappresentante le diverse modalit√† di formattazione dell&#39;output.">EEPROMManager::ResultStringBuilderSpecification</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee" title="Enumerazione rappresentante le diverse modalit‡ di formattazione dell&#39;output.">EEPROMManager::ResultStringBuilderSpecification</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#af3df05e28b30d46c6f8d831c07f1980c">EEPROMManager::TIME_RECOVERY_FROM_READ</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#ab1713885200ce0df7e44727bf28536ac">EEPROMManager::SEGMENT_DEPTH</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret...">EEPROMManager::format()</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare.">EEPROMManager::format()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#adc5187d41e25c25d4e3cbdc312adb285" title="Enumerazione rappresentante i diversi target interessati dalla formattazione dell&#39;output.">EEPROMManager::FormatTarget</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00117">117</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00117">117</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_aa97bd0d8c960f957f6c6a47d6b502dd8_cgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_aa97bd0d8c960f957f6c6a47d6b502dd8_cgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_aa97bd0d8c960f957f6c6a47d6b502dd8_cgraph" id="class_e_e_p_r_o_m_manager_aa97bd0d8c960f957f6c6a47d6b502dd8_cgraph">
 <area shape="rect" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="5,148,220,175"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret..." alt="" coords="283,5,456,32"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret..." alt="" coords="268,57,471,98"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare." alt="" coords="283,5,456,32"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a381ae932693fc82dd81116a72f858100" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare ..." alt="" coords="268,57,471,98"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7ef42a0d941408a893b924045fb2f4bb" title="Effettua il campionamento dei dati in output dal chip." alt="" coords="280,123,459,149"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="268,173,471,200"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="272,224,467,251"/>
@@ -1279,8 +1290,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpretare e permette di effettuare la conversione dei dati da visualizzare in basi differenti. </p>
-<p>Il seguente metodo formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpretare. Inoltre permette di effettuare la conversione dei dati da visualizzare nelle seguenti basi:</p><ul>
+<p>Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare e permette di effettuare la conversione dei dati da visualizzare in basi differenti. </p>
+<p>Il seguente metodo formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare. Inoltre permette di effettuare la conversione dei dati da visualizzare nelle seguenti basi:</p><ul>
 <li>DEC</li>
 <li>HEX</li>
 <li>OCT</li>
@@ -1290,26 +1301,26 @@ Here is the caller graph for this function:</div>
   <table class="params">
     <tr><td class="paramname">address</td><td>L'indirizzo di memoria da includere come informazione nell'output formattato </td></tr>
     <tr><td class="paramname">sampleResult</td><td>Il valore letto dal chip da includere come informazione nell'output formattato </td></tr>
-    <tr><td class="paramname">mode</td><td>La modalit√† di interpretazione dei dati letti: la base </td></tr>
+    <tr><td class="paramname">mode</td><td>La modalit‡ di interpretazione dei dati letti: la base </td></tr>
     <tr><td class="paramname">specification</td><td>Indica la presenza o meno di informazioni aggiuntive poste ad arricchire il significato dell'output</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee" title="Enumerazione rappresentante le diverse modalit√† di formattazione dell&#39;output.">EEPROMManager::ResultStringBuilderSpecification</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#aefdf301a33bb92088574ec60cbea77ee" title="Enumerazione rappresentante le diverse modalit‡ di formattazione dell&#39;output.">EEPROMManager::ResultStringBuilderSpecification</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit√† di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit‡ di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria.">EEPROMManager::readAddress()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria.">EEPROMManager::readSegment()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00586">586</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00710">710</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_a381ae932693fc82dd81116a72f858100_icgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_a381ae932693fc82dd81116a72f858100_icgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_a381ae932693fc82dd81116a72f858100_icgraph" id="class_e_e_p_r_o_m_manager_a381ae932693fc82dd81116a72f858100_icgraph">
-<area shape="rect" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret..." alt="" coords="493,23,696,65"/>
+<area shape="rect" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare ..." alt="" coords="493,23,696,65"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria." alt="" coords="233,5,443,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="231,56,445,83"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a148019e3414b8e81a6dd33386c049f29" title="Effettua la lettura dell&#39;intera memoria del chip." alt="" coords="5,56,183,83"/>
@@ -1343,7 +1354,7 @@ Here is the caller graph for this function:</div>
 
 <p>Effettua il campionamento dei dati in output dal chip. </p>
 <p>Il seguente metodo effettua il campionamento dei dati in output dal chip. Dunque, il chip dovrebbe fornire segnali in output e il controllore accettare segnali in input.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>I pin IO del controllore devono essere impostati su modalit√† <a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bfa1d89028fe6cc2e362504d2a31aac86ae">EEPROMManager::DataIOState::_INPUT</a></dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>I pin IO del controllore devono essere impostati su modalit‡ <a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bfa1d89028fe6cc2e362504d2a31aac86ae">EEPROMManager::DataIOState::_INPUT</a></dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria.">EEPROMManager::readAddress()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria.">EEPROMManager::readSegment()</a> </dd>
@@ -1352,7 +1363,7 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a3765e7d80716eec86e8dc21fffb93b61">EEPROMManager::dataIO</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00572">572</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00691">691</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1362,6 +1373,58 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria." alt="" coords="233,5,443,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="231,56,445,83"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a148019e3414b8e81a6dd33386c049f29" title="Effettua la lettura dell&#39;intera memoria del chip." alt="" coords="5,56,183,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f69a71d695d931a6959b23a8ec2fbc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f69a71d695d931a6959b23a8ec2fbc0">&#9670;&nbsp;</a></span>sampleLowLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte EEPROMManager::sampleLowLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Effettua il campionamento low level dei dati in output dal chip. </p>
+<p>Il seguente metodo effettua il campionamento solo del dato in uscita dal pin IO7 del chip EEPROM. Questo Ë necessario per implementare la tecnica del Data Polling (descritta nel dettaglio sopra).</p>
+<dl class="section pre"><dt>Precondition</dt><dd>I pin IO del controllore devono essere impostati su modalit‡ <a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bfa1d89028fe6cc2e362504d2a31aac86ae">EEPROMManager::DataIOState::_INPUT</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria.">EEPROMManager::writeAddress()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria.">EEPROMManager::writeSegment()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#adfdb0fece69f1722b6fe85e6b0562bde" title="Effettua la formattazione della memoria del chip.">EEPROMManager::hardClear()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a3765e7d80716eec86e8dc21fffb93b61">EEPROMManager::dataIO</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00705">705</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_e_e_p_r_o_m_manager_a7f69a71d695d931a6959b23a8ec2fbc0_icgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_a7f69a71d695d931a6959b23a8ec2fbc0_icgraph" alt=""/></div>
+<map name="class_e_e_p_r_o_m_manager_a7f69a71d695d931a6959b23a8ec2fbc0_icgraph" id="class_e_e_p_r_o_m_manager_a7f69a71d695d931a6959b23a8ec2fbc0_icgraph">
+<area shape="rect" title="Effettua il campionamento low level dei dati in output dal chip." alt="" coords="747,49,949,90"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#adfdb0fece69f1722b6fe85e6b0562bde" title="Effettua la formattazione della memoria del chip." alt="" coords="495,5,687,32"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="485,56,697,83"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="483,107,699,133"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#ab5161ceb594613c87cd2359bd94875dd" title="Effettua la scrittura della sequenza di byte specificata nella memoria del chip." alt="" coords="219,56,435,83"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a0d1413187f2761faef59a9fe09ebf4c6" title="Effettua la scrittura dell&#39;intera memoria del chip." alt="" coords="237,107,416,133"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a23ddca0bf363d06f2546bc090ece2067" title="Effettua la formattazione della memoria del chip." alt="" coords="5,107,171,133"/>
 </map>
 </div>
 
@@ -1413,7 +1476,7 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a8c43db4ba4e547fefa6382b95761342a">EEPROMManager::addresses</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00525">525</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00644">644</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1479,13 +1542,13 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#adfdb0fece69f1722b6fe85e6b0562bde" title="Effettua la formattazione della memoria del chip.">EEPROMManager::hardClear()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit√† di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit‡ di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a9f0651be0f7f180e991fac50740037d7">EEPROMManager::DATA_EXCHANGING_PIN</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a3765e7d80716eec86e8dc21fffb93b61">EEPROMManager::dataIO</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00552">552</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00671">671</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1552,17 +1615,23 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aec3f3ef2003e8b11f473d4b2bf09b24d">EEPROMManager::outputEnable</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00542">542</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00661">661</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_acf8b109590c67a2041c97f094b12422d_icgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_acf8b109590c67a2041c97f094b12422d_icgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_acf8b109590c67a2041c97f094b12422d_icgraph" id="class_e_e_p_r_o_m_manager_acf8b109590c67a2041c97f094b12422d_icgraph">
-<area shape="rect" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="493,49,688,90"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#acb0cbf0481dc424f236d1b312d0bd268" title="Inizializzatore stabile." alt="" coords="261,5,415,32"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria." alt="" coords="233,56,443,83"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="231,107,445,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a148019e3414b8e81a6dd33386c049f29" title="Effettua la lettura dell&#39;intera memoria del chip." alt="" coords="5,107,183,133"/>
+<area shape="rect" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="747,125,941,166"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#adfdb0fece69f1722b6fe85e6b0562bde" title="Effettua la formattazione della memoria del chip." alt="" coords="495,5,687,32"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#acb0cbf0481dc424f236d1b312d0bd268" title="Inizializzatore stabile." alt="" coords="513,56,668,83"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a595de5a32439cfa9af2868bef5b77770" title="Effettua la lettura di un singolo indirizzo di memoria." alt="" coords="485,107,696,133"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa97bd0d8c960f957f6c6a47d6b502dd8" title="Effettua la lettura di un intero segmento di memoria." alt="" coords="483,157,698,184"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="485,208,697,235"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="483,259,699,285"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a148019e3414b8e81a6dd33386c049f29" title="Effettua la lettura dell&#39;intera memoria del chip." alt="" coords="238,157,415,184"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#ab5161ceb594613c87cd2359bd94875dd" title="Effettua la scrittura della sequenza di byte specificata nella memoria del chip." alt="" coords="219,208,435,235"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a0d1413187f2761faef59a9fe09ebf4c6" title="Effettua la scrittura dell&#39;intera memoria del chip." alt="" coords="237,259,416,285"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a23ddca0bf363d06f2546bc090ece2067" title="Effettua la formattazione della memoria del chip." alt="" coords="5,259,171,285"/>
 </map>
 </div>
 
@@ -1610,7 +1679,7 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#ac333af96fc01883b9adebfc9b8700446">EEPROMManager::writeEnable</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00547">547</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00666">666</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1657,7 +1726,7 @@ Here is the caller graph for this function:</div>
 
 <p>Effettua la scrittura di un singolo indirizzo di memoria. </p>
 <p>Il seguente metodo effettua la scrittura di un singolo indirizzo di memoria.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>L'indirizzo di memoria da scrivere </td></tr>
@@ -1673,42 +1742,50 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore.">EEPROMManager::setDataIO()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit√† di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit‡ di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit√† di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit‡ di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato.">EEPROMManager::setAddress()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip.">EEPROMManager::setWriteEnable()</a> </dd>
 <dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#ad80b086ebac004e97395438fe8f74672">EEPROMManager::TIME_WAIT_READ</a> </dd>
+<dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a58ce6242b901f44feeb36c257bbefdc2">EEPROMManager::IMPRECISION</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO.">EEPROMManager::put()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#af3df05e28b30d46c6f8d831c07f1980c">EEPROMManager::TIME_RECOVERY_FROM_READ</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a0e43ea279fa5b58d79deba7d4fe62e16">EEPROMManager::LOWEST_VALID_DATA_VALUE</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a83421cdd18eb39598af0ddaa57775a01">EEPROMManager::HIGHEST_VALID_DATA_VALUE</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly.">EEPROMManager::isReadonly()</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly.">EEPROMManager::isReadonly()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a44dcf486880e00e173ae23dbf98479a3">EEPROMManager::TIME_HOLD_WRITE_SIGNAL</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a7b0be694d212b14de6855b6de485e81b">EEPROMManager::TIME_RECOVERY_FROM_WRITE</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip.">EEPROMManager::setOutputEnable()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a97b075a3576619653d12c97cea818799">EEPROMManager::TIME_WRITE</a> </dd></dl>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip.">EEPROMManager::sampleLowLevel()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a7b0be694d212b14de6855b6de485e81b">EEPROMManager::TIME_RECOVERY_FROM_WRITE</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00199">199</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00199">199</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_aa9bae4af8125e22716b8ae21b1ec3e90_cgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_aa9bae4af8125e22716b8ae21b1ec3e90_cgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_aa9bae4af8125e22716b8ae21b1ec3e90_cgraph" id="class_e_e_p_r_o_m_manager_aa9bae4af8125e22716b8ae21b1ec3e90_cgraph">
-<area shape="rect" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="5,107,217,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="278,5,479,32"/>
+<area shape="rect" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="5,173,217,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="278,5,479,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO." alt="" coords="301,56,456,83"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="277,107,480,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="281,157,476,184"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="265,208,492,235"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip." alt="" coords="277,107,480,149"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="277,173,480,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="281,224,476,251"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="281,275,476,317"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="265,341,492,368"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1747,7 +1824,7 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#ac9684363ad84b018ab85121e2f94b6d3">EEPROMManager::hasBeenInit</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a0e43ea279fa5b58d79deba7d4fe62e16">EEPROMManager::LOWEST_VALID_DATA_VALUE</a> </dd>
@@ -1760,19 +1837,21 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria.">EEPROMManager::writeSegment()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00351">351</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00427">427</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_a0d1413187f2761faef59a9fe09ebf4c6_cgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_a0d1413187f2761faef59a9fe09ebf4c6_cgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_a0d1413187f2761faef59a9fe09ebf4c6_cgraph" id="class_e_e_p_r_o_m_manager_a0d1413187f2761faef59a9fe09ebf4c6_cgraph">
-<area shape="rect" title="Effettua la scrittura dell&#39;intera memoria del chip." alt="" coords="5,107,184,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="232,107,448,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="509,5,710,32"/>
+<area shape="rect" title="Effettua la scrittura dell&#39;intera memoria del chip." alt="" coords="5,173,184,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a75bc6da9c92c79d169c172d854ae4448" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="232,173,448,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="509,5,710,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO." alt="" coords="532,56,687,83"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="508,107,711,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="512,157,707,184"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="496,208,723,235"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip." alt="" coords="508,107,711,149"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="508,173,711,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="512,224,707,251"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="512,275,707,317"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="496,341,723,368"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1820,16 +1899,16 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Effettua la scrittura della sequenza di byte specificata nella memoria del chip. </p>
-<p>Il seguente metodo effettua la scrittura nella memoria del chip della sequenza di byte specificata, partendo a scrivere dalla posizione specificata per la testina di stampa (situata sul primo indirizzo di memoria che verr√† scritto).</p>
+<p>Il seguente metodo effettua la scrittura nella memoria del chip della sequenza di byte specificata, partendo a scrivere dalla posizione specificata per la testina di stampa (situata sul primo indirizzo di memoria che verr‡ scritto).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>La sequenza di byte da scrivere nella memoria del chip </td></tr>
-    <tr><td class="paramname">bytes</td><td>La quantit√† di byte presenti nella sequenza fornita </td></tr>
+    <tr><td class="paramname">bytes</td><td>La quantit‡ di byte presenti nella sequenza fornita </td></tr>
     <tr><td class="paramname">printingHeadStartPosition</td><td>La posizione di partenza della testina di stampa</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#ac9684363ad84b018ab85121e2f94b6d3">EEPROMManager::hasBeenInit</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a0e43ea279fa5b58d79deba7d4fe62e16">EEPROMManager::LOWEST_VALID_DATA_VALUE</a> </dd>
@@ -1838,19 +1917,21 @@ Here is the caller graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria.">EEPROMManager::writeAddress()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00376">376</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00452">452</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_ab5161ceb594613c87cd2359bd94875dd_cgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_ab5161ceb594613c87cd2359bd94875dd_cgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_ab5161ceb594613c87cd2359bd94875dd_cgraph" id="class_e_e_p_r_o_m_manager_ab5161ceb594613c87cd2359bd94875dd_cgraph">
-<area shape="rect" title="Effettua la scrittura della sequenza di byte specificata nella memoria del chip." alt="" coords="5,107,221,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="269,107,481,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="542,5,743,32"/>
+<area shape="rect" title="Effettua la scrittura della sequenza di byte specificata nella memoria del chip." alt="" coords="5,173,221,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aa9bae4af8125e22716b8ae21b1ec3e90" title="Effettua la scrittura di un singolo indirizzo di memoria." alt="" coords="269,173,481,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="542,5,743,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO." alt="" coords="565,56,720,83"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="541,107,744,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="545,157,740,184"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="529,208,756,235"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip." alt="" coords="541,107,744,149"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="541,173,744,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="545,224,740,251"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="545,275,740,317"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="529,341,756,368"/>
 </map>
 </div>
 
@@ -1884,7 +1965,7 @@ Here is the call graph for this function:</div>
 
 <p>Effettua la scrittura di un intero segmento di memoria. </p>
 <p>Il seguente metodo effettua la scrittura di un intero segmento di memoria.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi√† stata eseguita</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>L'inizializzazione deve essere gi‡ stata eseguita</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">baseAddress</td><td>L'indirizzo base del segmento di memoria da scrivere </td></tr>
@@ -1900,44 +1981,52 @@ Here is the call graph for this function:</div>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore.">EEPROMManager::setDataIO()</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit√† di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#aa093893e9f801aa32df23f728b5c50bf" title="Enumerazione rappresentante le diverse modalit‡ di funzionamento attribuibili ai pin IO.">EEPROMManager::DataIOState</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit√† di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#affa6ca02f4fc18d26f9ff4e03fb7e476" title="Enumerazione rappresentante le diverse modalit‡ di interpretazione dei dati letti.">EEPROMManager::ReadMode</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato.">EEPROMManager::setAddress()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip.">EEPROMManager::setWriteEnable()</a> </dd>
 <dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#ad80b086ebac004e97395438fe8f74672">EEPROMManager::TIME_WAIT_READ</a> </dd>
+<dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a58ce6242b901f44feeb36c257bbefdc2">EEPROMManager::IMPRECISION</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO.">EEPROMManager::put()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#af3df05e28b30d46c6f8d831c07f1980c">EEPROMManager::TIME_RECOVERY_FROM_READ</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a0e43ea279fa5b58d79deba7d4fe62e16">EEPROMManager::LOWEST_VALID_DATA_VALUE</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a83421cdd18eb39598af0ddaa57775a01">EEPROMManager::HIGHEST_VALID_DATA_VALUE</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly.">EEPROMManager::isReadonly()</a> </dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly.">EEPROMManager::isReadonly()</a> </dd>
 <dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a44dcf486880e00e173ae23dbf98479a3">EEPROMManager::TIME_HOLD_WRITE_SIGNAL</a> </dd>
 <dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip.">EEPROMManager::setOutputEnable()</a> </dd>
+<dd>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip.">EEPROMManager::sampleLowLevel()</a> </dd>
+<dd>
 <a class="el" href="class_e_e_p_r_o_m_manager.html#a7b0be694d212b14de6855b6de485e81b">EEPROMManager::TIME_RECOVERY_FROM_WRITE</a> </dd>
 <dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#ab1713885200ce0df7e44727bf28536ac">EEPROMManager::SEGMENT_DEPTH</a> </dd>
-<dd>
-<a class="el" href="class_e_e_p_r_o_m_manager.html#a97b075a3576619653d12c97cea818799">EEPROMManager::TIME_WRITE</a> </dd></dl>
+<a class="el" href="class_e_e_p_r_o_m_manager.html#ab1713885200ce0df7e44727bf28536ac">EEPROMManager::SEGMENT_DEPTH</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html#l00273">273</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html#l00310">310</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_e_e_p_r_o_m_manager_a75bc6da9c92c79d169c172d854ae4448_cgraph.png" border="0" usemap="#class_e_e_p_r_o_m_manager_a75bc6da9c92c79d169c172d854ae4448_cgraph" alt=""/></div>
 <map name="class_e_e_p_r_o_m_manager_a75bc6da9c92c79d169c172d854ae4448_cgraph" id="class_e_e_p_r_o_m_manager_a75bc6da9c92c79d169c172d854ae4448_cgraph">
-<area shape="rect" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="5,107,221,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a8d2076266a99cc5f6cd94f6fcca660d7" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="282,5,483,32"/>
+<area shape="rect" title="Effettua la scrittura di un intero segmento di memoria." alt="" coords="5,173,221,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#ac2cd13eefe1042c752c88722487c9189" title="Controlla se l&#39;indirizzo base specificato si riferisce ad un segmento readonly." alt="" coords="282,5,483,32"/>
 <area shape="rect" href="class_e_e_p_r_o_m_manager.html#a2c8f18767067d27e3e90256b8070a4ac" title="Imposta il valore specificato sui pin IO." alt="" coords="305,56,460,83"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="281,107,484,133"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="285,157,480,184"/>
-<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="269,208,496,235"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a7f69a71d695d931a6959b23a8ec2fbc0" title="Effettua il campionamento low level dei dati in output dal chip." alt="" coords="281,107,484,149"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a9ee8c63564876db6614f32b57598ae64" title="Seleziona l&#39;indirizzo specificato." alt="" coords="281,173,484,200"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#a162d0b0b8d6787c1f3e599237f328d11" title="Cambia lo stato dei pin IO dal punto di vista del controllore." alt="" coords="285,224,480,251"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#acf8b109590c67a2041c97f094b12422d" title="Cambia lo stato del segnale di output enable verso il chip." alt="" coords="285,275,480,317"/>
+<area shape="rect" href="class_e_e_p_r_o_m_manager.html#aeb38a6b5c19e4adb39bbcf362f08ce02" title="Cambia lo stato del segnale di write enable verso il chip." alt="" coords="269,341,496,368"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1975,7 +2064,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante il numero di indirizzi totali (i quali non sono tutti raggiungibili. Quelli raggiungibili risiedono nel range 0 &ndash; (ADDRESSES - 1)) </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00180">180</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00202">202</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2000,7 +2089,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta un array di pin utilizzati per l'addressing verso il chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00240">240</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00262">262</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2023,9 +2112,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rappresenta una direttiva del preprocessore moderna indicante il numero di pin di indirizzamento da cui √® composto il chip </p>
+<p>Rappresenta una direttiva del preprocessore moderna indicante il numero di pin di indirizzamento da cui Ë composto il chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00109">109</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00131">131</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2048,9 +2137,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rappresenta una direttiva del preprocessore moderna indicante il numero di pin di IO da cui √® composto il chip </p>
+<p>Rappresenta una direttiva del preprocessore moderna indicante il numero di pin di IO da cui Ë composto il chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00116">116</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00138">138</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2075,7 +2164,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta un array di pin utilizzati per l'IO di dati da e verso il chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00247">247</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00269">269</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2100,7 +2189,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta un flag booelano indicante lo stato di inizializzazione dell'oggetto "this" in questione </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00261">261</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00283">283</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2123,9 +2212,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rappresenta una direttiva del preprocessore moderna indicante l'indirizzo pi√π alto (con valore algebricamente pi√π basso) raggiungibile </p>
+<p>Rappresenta una direttiva del preprocessore moderna indicante l'indirizzo pi˘ alto (con valore algebricamente pi˘ basso) raggiungibile </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00194">194</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00216">216</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2148,9 +2237,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rappresenta una direttiva del preprocessore moderna indicante il valore algebricamente pi√π alto realizzabile con il numero di bit del chip </p>
+<p>Rappresenta una direttiva del preprocessore moderna indicante il valore algebricamente pi˘ alto realizzabile con il numero di bit del chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00217">217</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00239">239</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2175,7 +2264,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante approssimativamente la possibile imprecisione del chip in termini di temporizzazione </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00102">102</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00124">124</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2198,9 +2287,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rappresenta una direttiva del preprocessore moderna indicante l'indirizzo pi√π basso (con valore algebricamente pi√π alto) raggiungibile </p>
+<p>Rappresenta una direttiva del preprocessore moderna indicante l'indirizzo pi˘ basso (con valore algebricamente pi˘ alto) raggiungibile </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00187">187</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00209">209</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2223,9 +2312,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rappresenta una direttiva del preprocessore moderna indicante il valore algebricamente pi√π basso realizzabile con il numero di bit del chip </p>
+<p>Rappresenta una direttiva del preprocessore moderna indicante il valore algebricamente pi˘ basso realizzabile con il numero di bit del chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00210">210</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00232">232</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2250,7 +2339,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta il pin utilizzato per l'output del segnale di output enable verso il chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00226">226</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00248">248</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2274,9 +2363,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna utilizzata per eseguire il padding dell'output</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret...">EEPROMManager::format()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare.">EEPROMManager::format()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00162">162</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00184">184</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2300,9 +2389,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna utilizzata per eseguire il padding dell'output</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi√π elegante e semplice da interpret...">EEPROMManager::format()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_e_p_r_o_m_manager.html#a3df1810c43b78b2e76a85660605686fc" title="Formatta i dati da visualizzare per ottenere un output a schermo pi˘ elegante e semplice da interpretare.">EEPROMManager::format()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00170">170</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00192">192</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2327,7 +2416,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante il numero di segmenti readonly attivi </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00138">138</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00160">160</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2352,7 +2441,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante lo stato di abilitazione del permesso di presenza di segmenti readonly </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00130">130</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00152">152</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2377,7 +2466,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta un array di indirizzi base dei segmenti readonly attivi </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00254">254</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00276">276</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2400,9 +2489,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rappresenta una direttiva del preprocessore moderna indicante la profondit√† di ogni singolo segmento di memoria (serie di singoli indirizzi di memoria) </p>
+<p>Rappresenta una direttiva del preprocessore moderna indicante la profondit‡ di ogni singolo segmento di memoria (serie di singoli indirizzi di memoria) </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00123">123</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00145">145</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2427,7 +2516,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante per quanto tempo bisogna tenere attivo il segnale write enable per far effettivamente iniziare un ciclo di scrittura al chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00078">78</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00109">109</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2452,7 +2541,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante per quanto tempo il chip risulta inibito dopo il completamento di una lettura (completata nel momento in cui viene disattivato l'output enable) </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00068">68</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00099">99</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2477,7 +2566,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante per quanto tempo il chip risulta inibito dopo il completamento di una scrittura (completata nel momento in cui viene completato un intero ciclo di scrittura) </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00095">95</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00117">117</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2502,32 +2591,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante il tempo che trascorre tra l'invio del segnale di output enable al chip e l'effettiva presenza di dati campionabili sui pin di IO </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00060">60</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
-
-</div>
-</div>
-<a id="a97b075a3576619653d12c97cea818799"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97b075a3576619653d12c97cea818799">&#9670;&nbsp;</a></span>TIME_WRITE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int EEPROMManager::TIME_WRITE = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Rappresenta una direttiva del preprocessore moderna indicante quanto tempo impiega un ciclo di scrittura per essere totalmente completato </p>
-
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00087">87</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00091">91</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2552,7 +2616,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta una direttiva del preprocessore moderna indicante il numero di valori validi realizzabili con il numero di bit del chip (non tutti utilizzabili. Quelli realizzabili risiedono nel range 0 &ndash; (VALID_DATA_VALUES - 1)) </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00203">203</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00225">225</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
@@ -2577,13 +2641,13 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Rappresenta il pin utilizzato per l'output del segnale di write enable verso il chip </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html#l00233">233</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html#l00255">255</a> of file <a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/EEPROMProgrammer/src/<a class="el" href="_e_e_p_r_o_m_programmer_8h_source.html">EEPROMProgrammer.h</a></li>
-<li>src/EEPROMProgrammer/src/<a class="el" href="_e_e_p_r_o_m_programmer_8cpp_source.html">EEPROMProgrammer.cpp</a></li>
+<li>src/EEPROMProgrammerDataPolling/<a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8h_source.html">EEPROMProgrammerDataPolling.h</a></li>
+<li>src/EEPROMProgrammerDataPolling/<a class="el" href="_e_e_p_r_o_m_programmer_data_polling_8cpp_source.html">EEPROMProgrammerDataPolling.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
